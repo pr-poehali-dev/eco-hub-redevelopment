@@ -427,6 +427,55 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="team" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Наша команда</h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Эксперты на стыке архитектуры, технологий и экологии
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  name: 'Александра Волкова',
+                  role: 'Главный архитектор',
+                  description: 'Специалист по адаптивному реиспользованию промышленных зданий. 15+ лет опыта в редевелопменте.',
+                  icon: 'Building2'
+                },
+                {
+                  name: 'Дмитрий Соколов',
+                  role: 'Руководитель цифровой платформы',
+                  description: 'Разработчик Digital Twin систем. Эксперт по IoT и умным зданиям.',
+                  icon: 'Cpu'
+                },
+                {
+                  name: 'Мария Зеленская',
+                  role: 'Директор по устойчивому развитию',
+                  description: 'Эколог-урбанист. Специалист по циркулярной экономике и green-tech решениям.',
+                  icon: 'Leaf'
+                }
+              ].map((member, i) => (
+                <Card key={i} className="border-border/40 bg-card hover:shadow-xl transition-all group">
+                  <CardHeader className="text-center">
+                    <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Icon name={member.icon as any} className="text-white" size={40} />
+                    </div>
+                    <CardTitle className="text-xl mb-2">{member.name}</CardTitle>
+                    <Badge className="bg-eco text-eco-foreground w-fit mx-auto">{member.role}</Badge>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                    <p className="text-muted-foreground">{member.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
