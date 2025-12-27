@@ -84,7 +84,7 @@ const Index = () => {
       <header className="border-b border-border/40 bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Эко-Хаб" className="h-12 w-auto" />
+            <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Эко-Хаб" className="h-10 w-auto object-contain" />
             <span className="text-2xl font-bold">Эко-Хаб</span>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -498,7 +498,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Эко-Хаб" className="h-10 w-auto" />
+                <img src="https://cdn.poehali.dev/files/logoza.ru.png" alt="Эко-Хаб" className="h-8 w-auto object-contain" />
                 <span className="text-xl font-bold">Эко-Хаб</span>
               </div>
               <p className="text-sm text-primary-foreground/80">
