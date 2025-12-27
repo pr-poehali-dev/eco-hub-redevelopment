@@ -84,7 +84,9 @@ const Index = () => {
       <header className="border-b border-border/40 bg-card/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="https://cdn.poehali.dev/files/Снимок экрана 2025-12-27 в 13.47.25.png" alt="Эко-Хаб" className="h-10 w-auto object-contain" />
+            <div className="bg-white/95 px-4 py-2 rounded-lg shadow-sm">
+              <img src="https://cdn.poehali.dev/files/Снимок экрана 2025-12-27 в 13.47.25.png" alt="Эко-Хаб" className="h-10 w-auto object-contain" />
+            </div>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#about" className="text-sm hover:text-secondary transition-colors">О проекте</a>
@@ -497,7 +499,9 @@ const Index = () => {
           <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src="https://cdn.poehali.dev/files/Снимок экрана 2025-12-27 в 13.47.25.png" alt="Эко-Хаб" className="h-8 w-auto object-contain" />
+                <div className="bg-white/10 px-3 py-1.5 rounded-lg">
+                  <img src="https://cdn.poehali.dev/files/Снимок экрана 2025-12-27 в 13.47.25.png" alt="Эко-Хаб" className="h-8 w-auto object-contain" />
+                </div>
               </div>
               <p className="text-sm text-primary-foreground/80">
                 Создаём устойчивые сообщества и пространства будущего
